@@ -39,7 +39,7 @@ while not is_game_over:
 
     print(display)
 
-    if guess not in chosen_word:
+    if normalization(guess) not in normalization(chosen_word):
         lives -= 1
         print(f"'{guess}' no forma parte de la palabra; pierdes una vida.")
 
